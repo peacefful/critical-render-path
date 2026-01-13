@@ -1,7 +1,6 @@
 <template>
   <div class="page">
-    <h1>Страница с внешним SCRIPT</h1>
-    <p>Этот стиль подключён только здесь</p>
+    <h2 class="text-black font-bold text-xl">Страница с внешним SCRIPT</h2>
   </div>
 </template>
 

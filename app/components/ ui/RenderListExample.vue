@@ -1,7 +1,7 @@
 <template>
   <div ref="target" class="page">
     <section class="container">
-      <section class="list">
+      <section v-if="targetIsVisible" class="list">
         <article
           v-for="i in 5000"
           :key="i"
@@ -28,12 +28,12 @@
 import { useIntersectionObserver } from "@vueuse/core";
 import { shallowRef, useTemplateRef } from "vue";
 
-// const target = useTemplateRef("target");
-// const targetIsVisible = shallowRef(false);
+const target = useTemplateRef("target");
+const targetIsVisible = shallowRef(false);
 
-// useIntersectionObserver(target, ([entry], observerElement) => {
-//   targetIsVisible.value = entry?.isIntersecting || false;
-// });
+useIntersectionObserver(target, ([entry], observerElement) => {
+  targetIsVisible.value = entry?.isIntersecting || false;
+});
 
 // https://vueuse.org/core/useIntersectionObserver/
 </script>

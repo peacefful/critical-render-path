@@ -1,11 +1,9 @@
 <template>
-  <h1>Critical Render Path</h1>
+  <h2 class="text-black font-bold text-xl">Изображение</h2>
+  <img :src="image" alt="image" class="pt-2" />
 
-  <h2>Большое изображение</h2>
-  <img :src="image" alt="image" />
-
-  <h2>Контент с текстом</h2>
-  <p>
+  <h3 class="text-black font-bold text-xl pt-2">Контент с текстом</h3>
+  <p class="text-black pt-2">
     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore quae
     qui, dolore eveniet corporis quasi accusamus rerum molestiae animi
     necessitatibus consequatur quos eos quas odio hic deleniti earum
@@ -91,11 +89,11 @@
     necessitatibus sapiente!
   </p>
 
-  <h3>Большой список карточек</h3>
-  <LazyRenderListExample />
+  <h4 class="text-black font-bold text-xl pt-2">Большой список карточек</h4>
+  <LazyRenderListExample class="pt-2" />
 </template>
 
 <script setup>
 const image =
-  "https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?w=200&h=200&fit=home";
+  "https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?w=320&h=320&fit=home";
 </script>

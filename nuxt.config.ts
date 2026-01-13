@@ -24,5 +24,7 @@ export default defineNuxtConfig({
     },
   ],
 
+  modules: ["@nuxt/ui"],
+
   sourcemap: true,
 });
