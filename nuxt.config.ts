@@ -12,6 +12,8 @@ export default defineNuxtConfig({
         {
           rel: "stylesheet",
           href: "https://mw2.breezyx.space/static/index.css",
+          // media: "print",
+          // onload: "this.media='all'",
         },
       ],
     },
