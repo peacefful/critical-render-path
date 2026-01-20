@@ -6,7 +6,7 @@
 
 <script setup>
 import { useScriptTag } from "@vueuse/core";
-
+  
 // useScriptTag("https://player.twitch.tv/js/embed/v1.js", {
 //   defer: true,
 // });

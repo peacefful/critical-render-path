@@ -1,6 +1,6 @@
 <template>
   <h2 class="text-black font-bold text-xl">Изображение</h2>
-  <img :src="image" alt="image" class="pt-2" />
+  <img :src="image" alt="image" class="pt-2 size-50" />
 
   <h3 class="text-black font-bold text-xl pt-2">Контент с текстом</h3>
   <p class="text-black pt-2">
@@ -95,5 +95,5 @@
 
 <script setup>
 const image =
-  "https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?w=320&h=320&fit=home";
+  "https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?w=3200&h=3200&fit=home";
 </script>
