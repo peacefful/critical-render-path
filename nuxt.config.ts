@@ -7,13 +7,15 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      script: [{ src: "https://player.twitch.tv/js/embed/v1.js" }],
+      script: [{ src: "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" }],
       link: [
         {
           rel: "stylesheet",
           href: "https://mw2.breezyx.space/static/index.css",
-          // media: "print",
-          // onload: "this.media='all'",
+        },
+        {
+          rel: "stylesheet",
+          href: "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css",
         },
       ],
     },
@@ -30,3 +32,6 @@ export default defineNuxtConfig({
 
   sourcemap: true,
 });
+
+// media: "print",
+// onload: "this.media='all'",

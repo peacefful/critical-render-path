@@ -27,14 +27,6 @@
         </article>
       </section>
     </section>
-    <!-- <img
-      :src="item.src"
-      :alt="item.title"
-      :width="item.width"
-      :height="item.height"
-      :loading="index > 8 ? 'lazy' : 'eager'"
-      class="rounded-md size-full object-cover"
-    /> -->
   </UScrollArea>
 </template>
 
@@ -67,7 +59,7 @@ const items = Array.from({ length: 500 }).map((_, index) => {
 });
 
 const { data } = await useFetch<IComment[]>(
-  "https://jsonplaceholder.typicode.com/comments"
+  "https://jsonplaceholder.typicode.com/comments",
 );
 
 // https://ui.nuxt.com/docs/components/scroll-area

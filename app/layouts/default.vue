@@ -10,7 +10,7 @@
         <NuxtLink to="/">Long Task</NuxtLink>
       </li>
       <li>
-        <NuxtLink to="/text-area">Virtulization</NuxtLink>
+        <NuxtLink to="/scroll-area">Virtulization</NuxtLink>
       </li>
     </nav>
   </header>
